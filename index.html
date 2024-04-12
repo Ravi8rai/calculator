@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="frame1">
+<div class="box">
+<h3 id="heading">calc</h3>
+<input type="text" name="" id="display">
+<div class="plate">
+    <div class="allicon">
+    <button class="icon" onclick="screen = screen + '7';
+    document.querySelector('#display').value = screen;">7</button>
+
+    <button class="icon" onclick="screen = screen + '8';
+    document.querySelector('#display').value = screen;">8</button>
+
+    <button class="icon" onclick="screen = screen + '9';
+    document.querySelector('#display').value = screen;">9</button>
+
+    <button class="icondel onclick= "screen ="deleteLast();
+    document.querySelector = ('#display').value = currentValue.slice(0, -1);">DEL</button> 
+
+    <button class="icon" onclick="screen = screen + '4';
+    document.querySelector('#display').value = screen;">4</button>
+
+    <button class="icon" onclick="screen = screen + '5';
+    document.querySelector('#display').value = screen;">5</button>
+
+    <button class="icon" onclick="screen = screen + '6';
+    document.querySelector('#display').value = screen;">6</button> 
+
+    <button class="icon" onclick="screen = screen + '+';
+    document.querySelector('#display').value = screen;">+</button> 
+
+    <button class="icon" onclick="screen = screen + '1';
+    document.querySelector('#display').value = screen;">1</button>
+
+    <button class="icon" onclick="screen = screen + '2';
+    document.querySelector('#display').value = screen;">2</button>
+
+    <button class="icon" onclick="screen = screen + '3';
+    document.querySelector('#display').value = screen;">3</button>
+
+    <button class="icon" onclick="screen = screen + '-';
+    document.querySelector('#display').value = screen;">-</button>
+
+    <button class="icon" onclick="screen = screen + '.';
+    document.querySelector('#display').value = screen;">.</button>
+
+    <button class="icon" onclick="screen = screen + '0';
+    document.querySelector('#display').value = screen;">0</button>
+
+    <button class="icon" onclick="screen = screen + '/';
+    document.querySelector('#display').value = screen;">/</button>
+
+    <button class="icon" onclick="screen = screen + 'x';
+    document.querySelector('#display').value = screen;">x</button>
+
+    <div class="calculation">
+    <button class="restart" onclick="Reset = Reset() == 0;
+    document.querySelector('#display').value = screen;">RESET</button>
+
+    <button class="equal" onclick="screen = eval(screen);
+    document.querySelector('#display').value = screen;">=</button>
+    </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+
+    <script>
+         let screen = '';
+        document.querySelector('#display').value = screen;
+    </script>
+</body>
+</html>
